@@ -11,20 +11,35 @@ Bu betik, sistemde gerekli kontrolleri yapar ve ardından main.py üzerinden uyg
 
 .
 ├── assets/                         # Görsel, ikon, stil dosyaları vb.
+
 ├── data/                           # Kaynak veri, doküman veya yedekler
+
 ├── faiss_indexes/yonetmelik_index/ # FAISS vektör indeks klasörü (otomatik oluşur)
+
 ├── models                          # gemma-2b-it.Q4_K_M.gguf (1.6gb) llm modeli
+
 │
+
 ├── build_index.py                 # FAISS index oluşturma fonksiyonu
+
 ├── main.py                        # Ana kontrol akışı (index kontrolü ve başlatma)
+
 ├── llm_pipeline.py                # LLM, retriever, reranker pipeline
+
 ├── streamlit_app.py              # Kullanıcı arayüzü (Streamlit üzerinden)
+
 ├── start.bat                     # Uygulama başlatıcı Windows betiği
+
 │
+
 ├── requirements.txt              # Gerekli temel Python kütüphaneleri
+
 ├── full_requirements.txt         # Genişletilmiş bağımlılık listesi
+
 ├── old_main.py                   # Yedeklenmiş/önceki sürüm main dosyası
+
 ├── README.md                     # Proje açıklaması ve kurulum rehberi
+
 
 🔧 Ana Bileşenler
 ✅ main.py
