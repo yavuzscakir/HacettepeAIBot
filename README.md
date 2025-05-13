@@ -5,6 +5,8 @@ Hacettepe University Artificial Intelligence Assistant Bot
 
 Hacettepe Üniversitesi Ön Lisans ve Lisans Yönetmeliği üzerine uzmanlaşmış bir Yapay Zekâ Yardımcı Botu. Kullanıcıdan gelen soruları işleyerek, yönetmeliğe dayalı cevaplar üretir.
 
+
+
 🚀 Nasıl Çalışır?
 
 Projeyi başlatmak için terminalde:
@@ -64,11 +66,13 @@ Chunk'lara böler ve HuggingFaceEmbeddings ile vektörleştirir.
 FAISS kullanarak vektör indeks oluşturur ve faiss_indexes/ altında kaydeder.
 
 
+
 ✅ llm_pipeline.py
 
 Embedding retriever, cross-encoder reranker ve LLM (Gemma 2B, Openchat) birleşimini tanımlar.
 
 Asıl soru-cevap zinciri burada tanımlanır.
+
 
 
 ✅ streamlit_app.py
@@ -79,11 +83,13 @@ Kullanıcıdan soru alır, modelin cevabını gösterir.
 Kaynak metinleri de kullanıcıya sunar.
 
 
+
 ✅ start.bat
 
 Otomatik başlatma betiğidir.
 
 Python ortamını ve uygulamayı başlatmak için uygundur.
+
 
 
 ⚙️ Kurulum
@@ -95,16 +101,21 @@ python -m venv venv
 venv\Scripts\activate
 
 
+
 2. Gerekli kütüphaneleri yükle:
    
 pip install -r requirements.txt
 
 
+
 3. .env dosyasını oluştur:
+
+
 
 4. Uygulamayı başlat:
 
 start.bat      #main.py dosyasından da başlatılabilir.
+
 
 
 📦 Kullanılan Teknolojiler
@@ -120,6 +131,7 @@ start.bat      #main.py dosyasından da başlatılabilir.
 🌐 Streamlit
 
 📄 .env + dotenv
+
 
 
 📘 Amaç
