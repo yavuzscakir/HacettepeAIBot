@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f6f9;
+      background-color: #fff4e0;
       color: #333;
       margin: 0;
       padding: 0;
@@ -15,7 +15,7 @@
     }
 
     header {
-      background-color: #861f41;
+      background-color: #4e0003;
       color: white;
       padding: 30px 20px 20px;
     }
@@ -48,7 +48,7 @@
     }
 
     h3 {
-      color: #861f41;
+      color: #4e0003;
       margin-bottom: 10px;
     }
 
@@ -65,44 +65,532 @@
     }
   </style>
 </head>
-<body>
-  <header>
-    <img src="assets/hacettepe2.png" alt="Hacettepe Logo" />
-    <h1>Hacettepe AI Assistant</h1>
-    <h2>An AI Powered Legislative Chatbot</h2>
-  </header>
+<div id="stickyHeader" style="
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #4e0003;
+  color: #fff4e0;
+  padding: 20px 20px;
+  font-size: 20px;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+">
+  <span>Hacettepe AI Assistant</span>
+  <img src="assets/hacettepe2.png" alt="Hacettepe Logo" style="height: 40px;" />
+</div>
 
-  <main>
-    <section>
-      <h3>Why Is This Project Truly Needed?</h3>
-      <p>
-        Students often have a wide range of questions regarding university procedures and policies.
-        These inquiries are directed through visits and emails, increasing the administrative workload.
-        The AI Assistant enables students to quickly access information while reducing the burden on staff.
+<section style="
+  height: 100vh;
+  background-color: #4e0003;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+">
+<div style="
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 100px;
+    padding: 30px 20px;
+    background-color: #4e0003;
+    flex-wrap: wrap;
+  ">
+    <div style="text-align: left; color: #fff4e0; padding-left: 40px;">
+      <h1 style="margin: 0; font-size: 70px;">Hacettepe AI Assistant</h1>
+      <h2 style="margin: 5px 0 0; font-weight: normal; font-size: 50px; color: #fff4e0;">
+        An AI Powered Legislative Chatbot
+      </h2>
+    </div>
+    <img src="assets/hacettepe2.png" alt="Hacettepe Logo" style="height: 250px;" />
+  </div>
+
+  <!-- Arama kutusu -->
+  <div style="
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #fff4e0;
+    border-radius: 50px;
+    padding: 12px 20px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  ">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#f4e8d3" viewBox="0 0 16 16">
+      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zM6.5 11.5a5 5 0 1 1 0-10 5 5 0 0 1 0 10z"/>
+    </svg>
+    <input type="text" placeholder="Ask a question about the regulations..." style="
+      background-color: transparent;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      color:  #4e0003;
+      margin-left: 10px;
+      flex: 1;
+    " />
+  </div>
+  <div style="
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 40px auto 0;
+  max-width: 800px;
+">
+  <!-- Kutucuk 1 -->
+  <div style="
+    width: 75px;
+    height: 75px;
+    background-color: #fff4e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  ">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" stroke="#4e0003" fill="none" stroke-width="2" viewBox="0 0 24 24">
+  <path d="M13 2 L3 14 H12 L11 22 L21 10 H13 Z" />
+</svg>
+
+    <div style="color: #4e0003; font-weight: bold; font-size: 13px; margin-top: 8px;">Instant Answers</div>
+  </div>
+
+  <!-- Kutucuk 2 -->
+  <div style="
+    width: 75px;
+    height: 75px;
+    background-color: #fff4e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  ">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" stroke="#4e0003" fill="none" stroke-width="2" viewBox="0 0 24 24">
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 16 14" />
+</svg>
+
+    <div style="color: #4e0003; font-weight: bold; font-size: 13px; margin-top: 8px;">24/7 Access</div>
+  </div>
+
+  <!-- Kutucuk 3 -->
+  <div style="
+    width: 75px;
+    height: 75px;
+    background-color: #fff4e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  ">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" stroke="#4e0003" fill="none" stroke-width="2" viewBox="0 0 24 24">
+  <rect x="3" y="3" width="7" height="7"/>
+  <rect x="14" y="3" width="7" height="7"/>
+  <rect x="14" y="14" width="7" height="7"/>
+  <rect x="3" y="14" width="7" height="7"/>
+</svg>
+
+    <div style="color: #4e0003; font-weight: bold; font-size: 13px; margin-top: 8px;">User Friendly UI</div>
+  </div>
+
+  <!-- Kutucuk 4 -->
+  <div style="
+    width: 75px;
+    height: 75px;
+    background-color: #fff4e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  ">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" stroke="#4e0003" fill="none" stroke-width="2" viewBox="0 0 24 24">
+  <circle cx="9" cy="7" r="4" />
+  <path d="M2 21c0-4 5-6 7-6s7 2 7 6" />
+  <polyline points="16 11 18 13 22 9" />
+</svg>
+
+    <div style="color: #4e0003; font-weight: bold; font-size: 13px; margin-top: 8px;">Reduced Workload</div>
+  </div>
+</div>
+
+
+</section>
+
+    <section style="
+  background-color: transparent;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+">
+  <!-- Görsel -->
+  <img src="assets/secretary.png" alt="Secretary Illustration" style="max-width: 300px; width: 100%; height: auto;" />
+
+  <!-- Yazı -->
+  <div style="max-width: 600px; text-align: left;">
+    <h2 style="color: #4e0003; font-size: 26px; margin-bottom: 16px;">Why Is This Project Truly Needed?</h2>
+    <p style="font-size: 18px; line-height: 1.6; color: #333;">
+      University secretaries receive hundreds of procedural and academic queries from students every week.
+      These are handled through emails and physical visits, significantly increasing the administrative burden.
+      The AI Assistant provides a fast and reliable self-service option, enabling students to access official information instantly — while reducing workload on staff.
+    </p>
+  </div>
+</section>
+
+
+<section style="
+  background-color: #4e0003;
+  width: 100%;
+  padding: 20px 0;
+">
+  <section style="
+  background-color: #4e0003;
+  width: 100%;
+  padding: 60px 0;
+  display: flex;
+  justify-content: flex-end;
+">
+  <div style="
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 0 60px;
+    max-width: 100%;
+    color: #fff4e0;
+    justify-content: flex-end;
+  ">
+    <!-- Yazı -->
+    <div style="max-width: 600px; text-align: right;">
+      <h2 style="font-size: 26px; margin-bottom: 16px;">What Does This Assistant Offer?</h2>
+      <p style="font-size: 18px; line-height: 1.6;">
+        This AI-powered assistant provides instant answers to students’ regulation-related questions using natural language
+        understanding. It operates 24/7, reduces unnecessary email traffic, and saves valuable time during busy academic periods —
+        making it a practical self-service tool for both students and university staff.
       </p>
-    </section>
+    </div>
 
-    <section>
-      <h3>How Does It Work?</h3>
-      <p>
-        A dataset based on Hacettepe University regulations was prepared in JSON format, vectorized and indexed with FAISS.
-        User queries are matched with the most relevant articles using semantic search and re-ranked using a cross-encoder.
-        Finally, a language model generates context-aware answers from the top results.
+    <!-- Geyik Görseli -->
+    <img src="assets/deer.png" alt="Deer Assistant Icon" style="width: 300px; height: auto;" />
+  </div>
+</section>
+<section style="background-color: #fff4e0; padding: 60px 20px; color: #4e0003;">
+  <div style="
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    
+  ">
+    <!-- Görsel (sol taraf) -->
+    <img src="assets/student.png" alt="Student using AI assistant" style="width: 200px; height: auto;" />
+
+    <!-- Yazı (sağ taraf) -->
+    <div style="flex: 1; min-width: 280px; text-align: left;">
+      <h2 style="font-size: 26px; margin-bottom: 20px;">Benefits for the Students</h2>
+      <p style="font-size: 18px; line-height: 1.6;">
+        The AI Assistant allows students to get instant answers to complex academic regulation questions without waiting in lines or sending emails. This provides clarity and confidence, especially during exam periods or while planning course selections.
       </p>
-    </section>
-
-    <section>
-      <h3>Flexible & Customizable</h3>
-      <p>
-        The system can be customized to fit the workflows of different departments, offering a user-friendly interface
-        and 24/7 access to complex academic regulations through natural language queries.
+      <p style="font-size: 18px; line-height: 1.6;">
+        It empowers students to access information anytime, from any device, reducing dependency on administrative staff and enabling more independent decision-making throughout their university journey.
       </p>
-    </section>
-  </main>
+    </div>
+  </div>
+</section>
 
+
+<section style="background-color: #4e0003; padding: 20px 20px; color: #fff4e0;">
+  <div style="
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    padding: 0 60px;
+    max-width: 100%;
+  ">
+    <!-- Yazı -->
+    <div style="flex: 1; min-width: 280px; max-width: 600px; text-align: right;">
+      <h2 style="font-size: 26px; margin-bottom: 20px;">Benefits for the University</h2>
+      <p style="font-size: 18px; line-height: 1.6;">
+        By automating the process of answering regulation-related questions, the assistant significantly reduces the workload on academic and administrative staff. This results in faster, more consistent communication with students while allowing secretaries and faculty to focus on more complex tasks. The system also ensures students receive standardized, accurate information — minimizing misunderstandings and repeat inquiries.
+      </p>
+      <p style="font-size: 18px; line-height: 1.6;">
+        Furthermore, usage analytics collected anonymously can offer valuable insights into student needs, helping departments identify common areas of confusion and improve future policies or documentation.
+      </p>
+    </div>
+
+    <!-- Görsel -->
+    <img src="assets/hacettepe3.png" alt="University Logo" style="width: 300px; height: auto;" />
+  </div>
+</section>
+
+
+
+<section style="background-color: #fff4e0; padding: 60px 20px; color: #4e0003;">
+  <div style="max-width: 1400px; margin: auto; text-align: center;">
+    <img src="assets/confused.png" alt="University Logo" style="width: 134px; height: auto;" />
+    <h2 style="font-size: 26px; margin-bottom: 40px;">How Does It Work?</h2>
+    
+    <div style="
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    ">
+    
+      <!-- Step 1 -->
+      <div style="
+        width: 180px;
+        padding: 15px;
+        background-color: #fff4e0;
+        border: 2px solid #4e0003;
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 14px;
+      "><img src="assets/json.png" alt="University Logo" style="width: 134px; height: auto;" />
+      <br><br>
+        JSON dataset prepared from Hacettepe University regulations.
+      </div>
+
+      <!-- Arrow -->
+      <div style="font-size: 24px; color: #4e0003;">➜</div>
+
+      <!-- Step 2 -->
+      <div style="
+        width: 180px;
+        padding: 15px;
+        background-color: #fff4e0;
+        border: 2px solid #4e0003;
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 14px;
+      "><img src="assets/vector.png" alt="University Logo" style="width: 150px; height: auto;" />
+      <br><br>
+        Data vectorized & indexed with FAISS for search.
+      </div>
+
+      <!-- Arrow -->
+      <div style="font-size: 24px; color: #4e0003;">➜</div>
+
+      <!-- Step 3 -->
+      <div style="
+        width: 180px;
+        padding: 15px;
+        background-color: #fff4e0;
+        border: 2px solid #4e0003;
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 14px;
+      "><img src="assets/input.png" alt="University Logo" style="width: 150px; height: auto;" />
+      <br><br>
+        Questions matched with most relevant entries.
+      </div>
+
+      <!-- Arrow -->
+      <div style="font-size: 24px; color: #4e0003;">➜</div>
+
+      <!-- Step 4 -->
+      <div style="
+        width: 180px;
+        padding: 15px;
+        background-color: #fff4e0;
+        border: 2px solid #4e0003;
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 14px;
+      "><img src="assets/encoder.png" alt="University Logo" style="width: 150px; height: auto;" />
+      <br><br>
+        Results re-ranked using cross-encoder.
+      </div>
+
+      <!-- Arrow -->
+      <div style="font-size: 24px; color: #4e0003;">➜</div>
+
+      <!-- Step 5 -->
+      <div style="
+        width: 180px;
+        padding: 15px;
+        background-color: #fff4e0;
+        border: 2px solid #4e0003;
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 14px;
+      "><img src="assets/llm.png" alt="University Logo" style="width: 134px; height: auto;" />
+      <br><br>
+        LLM generates final answer from top-ranked entries.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background-color: #4e0003; padding: 60px 20px;">
+  <div style="
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    color: #fff4e0;
+  ">
+    <!-- Search Icon - Büyük ve yazı bloğunun solunda -->
+    <img src="assets/keyboard.png" alt="University Logo" style="width: 200px; height: auto;" />
+
+    <!-- Text Content -->
+    <div style="flex: 1; text-align: left;">
+      <h2 style="font-size: 26px; margin-bottom: 16px;">Example Questions You Can Ask</h2>
+      <p style="font-size: 18px; line-height: 1.6;">
+        You can ask the assistant natural language questions about academic regulations. Here are a few real examples that users commonly ask:
+      </p>
+      <ul style="list-style: disc; padding-left: 20px; font-size: 18px; line-height: 1.8; margin-top: 10px;">
+        <li>B1 notu hangi puan aralığını ifade eder?</li>
+        <li>AKTS kredi sistemi nedir?</li>
+        <li>Mezuniyet şartları nelerdir?</li>
+      </ul>
+      <p style="font-size: 18px; margin-top: 20px;">
+        If you want to instantly learn the answers to these and similar questions, try the assistant now.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    <section style="
+  background-color: #fff4e0;
+  padding: 60px 20px;
+  text-align: center;
+">
+  
+  <h2 style="color: #4e0003; font-size: 28px; margin-bottom: 40px;">About Us</h2>
+  <div style="
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+  ">
+    <!-- Taha -->
+    <div style="
+      background-color: #fff4e0;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 30px 20px;
+      width: 280px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    ">
+      <!-- profil simgesi -->
+      <div style="margin-bottom: 20px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" stroke="#4e0003" fill="none" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="12" cy="7" r="4"/>
+          <path d="M2 21c0-4 5-6 10-6s10 2 10 6"/>
+        </svg>
+      </div>
+      <h3 style="color: #4e0003; margin-top: 0;">Taha Yunus Toplu</h3>
+      <p>2210356011</p>
+      <p><a href="mailto:taha.toplu@hacettepe.edu.tr">taha.toplu@hacettepe.edu.tr</a></p>
+      <a href="https://www.linkedin.com/in/taha-yunus-toplu-7b770a258/" target="_blank" style="
+        margin-top: 10px;
+        background-color: #4e0003;
+        color: #fff4e0;
+        text-decoration: none;
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-size: 14px;
+      ">LinkedIn</a>
+    </div>
+
+    <!-- Yavuz -->
+    <div style="
+      background-color: #fff4e0;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 30px 20px;
+      width: 280px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    ">
+      <!-- profil simgesi -->
+      <div style="margin-bottom: 20px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" stroke="#4e0003" fill="none" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="12" cy="7" r="4"/>
+          <path d="M2 21c0-4 5-6 10-6s10 2 10 6"/>
+        </svg>
+      </div>
+      <h3 style="color: #4e0003; margin-top: 0;">Yavuz Selim Çakır</h3>
+      <p>2200356045</p>
+      <p><a href="mailto:yavuzscakir69@gmail.com">yavuzscakir69@gmail.com</a></p>
+      <a href="https://www.linkedin.com/in/yavuzselimcakir/" target="_blank" style="
+        margin-top: 10px;
+        background-color: #4e0003;
+        color: #f4e8d3;
+        text-decoration: none;
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-size: 14px;
+      ">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+
+
+  
   <footer>
     © 2025 Hacettepe University - Computer Engineering Department<br>
     Developed by Taha Yunus Toplu & Yavuz Selim Çakır · Supervisor: Prof. Dr. Ahmet Burak Can
   </footer>
+   <script>
+    window.addEventListener('scroll', function () {
+      const sticky = document.getElementById('stickyHeader');
+      if (window.scrollY > 100) {
+        sticky.style.transform = 'translateY(0)';
+      } else {
+        sticky.style.transform = 'translateY(-100%)';
+      }
+    });
+  </script>
 </body>
 </html>
