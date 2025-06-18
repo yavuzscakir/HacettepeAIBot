@@ -1,32 +1,108 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hacettepe AI Assistant</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
-            color: #333;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            color: #861f41; /* Hacettepe bordosu */
-        }
-        p {
-            font-size: 18px;
-            max-width: 600px;
-            margin: 20px auto;
-            line-height: 1.6;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hacettepe AI Assistant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #861f41;
+      color: white;
+      padding: 30px 20px 20px;
+    }
+
+    header img {
+      height: 80px;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      margin: 10px 0 5px;
+      font-size: 28px;
+    }
+
+    header h2 {
+      margin: 0;
+      font-weight: normal;
+      font-size: 18px;
+      color: #ddd;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      color: #861f41;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #eee;
+      padding: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <img src="assets/hacettepe2.png" alt="Hacettepe Logo" />
     <h1>Hacettepe AI Assistant</h1>
-    <p>
-        Bu yapay zekâ destekli asistan, Hacettepe Üniversitesi'nin yönetmeliklerine dayalı olarak öğrenci ve personelin sorularına doğru ve hızlı yanıtlar sunmak için tasarlanmıştır.
-    </p>
+    <h2>An AI Powered Legislative Chatbot</h2>
+  </header>
+
+  <main>
+    <section>
+      <h3>Why Is This Project Truly Needed?</h3>
+      <p>
+        Students often have a wide range of questions regarding university procedures and policies.
+        These inquiries are directed through visits and emails, increasing the administrative workload.
+        The AI Assistant enables students to quickly access information while reducing the burden on staff.
+      </p>
+    </section>
+
+    <section>
+      <h3>How Does It Work?</h3>
+      <p>
+        A dataset based on Hacettepe University regulations was prepared in JSON format, vectorized and indexed with FAISS.
+        User queries are matched with the most relevant articles using semantic search and re-ranked using a cross-encoder.
+        Finally, a language model generates context-aware answers from the top results.
+      </p>
+    </section>
+
+    <section>
+      <h3>Flexible & Customizable</h3>
+      <p>
+        The system can be customized to fit the workflows of different departments, offering a user-friendly interface
+        and 24/7 access to complex academic regulations through natural language queries.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Hacettepe University - Computer Engineering Department<br>
+    Developed by Taha Yunus Toplu & Yavuz Selim Çakır · Supervisor: Prof. Dr. Ahmet Burak Can
+  </footer>
 </body>
 </html>
